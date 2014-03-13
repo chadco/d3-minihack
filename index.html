@@ -56,17 +56,72 @@ description: This is a sample beta site for Federal natural resource revenues.
   <div class="section gray where">
     <div class="row">
       <div class="twelve columns">
-        <h1 style="position: relative;">So where do these revenues go?<br />The answer is <span style="display: block;font-size: 1.4em;margin-left: 38px;margin-top: 20px;">it depends.</span>
-        <span style="display: block;float: right;margin-left: 26%;margin-top: -29px;"> Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.</h1>
+        <h1 style="position: relative;">So where do these revenues go?<br />The answer is <span style="display: block;font-size: 1.4em;margin-left: 38px;margin-top: 20px;">it depends.</span> <span style="display: block;float: right;margin-left: 26%;margin-top: -29px;"> Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.</h1>
       </div>
     </div>
-    <div class="row offshore">
-      <div class="six columns tree">
+    <style>
+		.stats {
+			width: 100%;	
+		}
+		.stats > div {
+			position: relative;	
+			margin-left: 3px;
+		}
+		.stats > div i {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background-color: #039;	
+		}
+		.stats div.nth(1) {
+			width: 49%;
+			background-color: #639;
+			
+		}
+		.stats div.nth(2) {
+			width: 49%;
+			background-color: #66C;
+		}
+		.stats div.nth(3) {
+			width: 24.5%;
+			background-color: #66C;			
+		}
+		.stats div.nth(4) {
+			width: 24.5%;
+			background-color: #66C;	
+		}
+	</style>
+    <article class="row offshore">
+      <section class="six columns tree">
         <h1>Where do <span class="purple">offshore</span> revenues go?</h1>
-        <img src="{{ site.url }}/assets/img/offshore-mock.png" alt="Where do offshore revenues go?">
-      </div>
-      <div class="six columns whereInfo">
-        <h2>U.S. Treasury</h2>
+        
+        <div class="stats">
+        	<div>
+            	<h2>U.U. Treasury</h2>
+            	<span>remainder</span> 
+            	<i></i>     	
+            </div>
+            <div>
+            	<h2>STATES</h2>
+            	<span>27%</span>
+                <i></i>  
+            </div>
+            <div>
+            	<h2>STATES</h2>
+            	<span>27%</span>
+                <i></i>
+            </div>
+            <div>
+            	<h2>STATES</h2>
+            	<span>27%</span>
+                <i></i>
+            </div>
+        </div>	
+        
+        <!--<img src="{{ site.url }}/assets/img/offshore-mock.png" alt="Where do offshore revenues go?">-->
+      </section>
+      <section class="six columns whereInfo">
+        <h1>U.S. Treasury</h1>
         <p>This revenue goes into the U.S. General Fund, which is where money from individual and corporate income taxes go, and accounts for roughly two-thirds of all federal expenditures.</p>
         <p>What does this help pay for?</p>
         <div class="row">
@@ -82,8 +137,8 @@ description: This is a sample beta site for Federal natural resource revenues.
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
     <div class="row onshore">
       <div class="six columns tree">
         <h1>Where do <span class="orange">onshore</span> revenues go?</h1>
