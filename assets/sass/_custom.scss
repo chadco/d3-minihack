@@ -251,3 +251,33 @@ d3
 //     height: 500px;
 // }
 
+/*  CHAD's STUFF */
+.stats {
+			width: 100%;	
+		}
+		.stats > div {
+			position: relative;	
+			margin-left: 3px;
+		}
+		.stats > div i {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background-color: #039;	
+		}
+		.stats div.nth-child(1) {
+			width: 49%;
+			background-color: #639;			
+		}
+		.stats div.nth-child(2) {
+			width: 49%;
+			background-color: #66C;
+		}
+		.stats div.nth-child(3) {
+			width: 24.5%;
+			background-color: #66C;			
+		}
+		.stats div.nth-child(4) {
+			width: 24.5%;
+			background-color: #66C;	
+		}
